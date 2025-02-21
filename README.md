@@ -29,6 +29,31 @@ In repository demo folder
 ### 3. PyBullet GUI
 - Once the simulation is running, you can use the PyBullet GUI to observe the robot’s actions in real-time. The interface allows you to track the movement of the robotic arm, gripper, and cubes as they interact within the environment.
 
+- If you meet such issue
+
+```
+pybullet build time: Jan 29 2025 23:16:28
+startThreads creating 1 threads.
+starting thread 0
+started thread 0 
+argc=2
+argv[0] = --unused
+argv[1] = --start_demo_name=Physics Server
+ExampleBrowserThreadFunc started
+X11 functions dynamically loaded using dlopen/dlsym OK!
+X11 functions dynamically loaded using dlopen/dlsym OK!
+Creating context
+Failed to create GL 3.3 context ... using old-style GLX context
+Failed to create an OpenGL context
+```
+
+Then follow the sulution:
+
+```
+sudo prime-select nvidia
+__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxinfo | grep "OpenGL"
+```
+
 - TO ensure the simulation can be run, should be use gpu if there is no mesa in your PC
 
 ```
