@@ -2,9 +2,9 @@
 
 This project simulates a UR5 robotic arm with a Epick suction gripper, performing autonomous object grasping and placement tasks in the PyBullet environment. Using inverse kinematics (IK) for precise arm control and synchronized joint control for realistic gripper motion, the robot grasps cubes from random positions and places them on a tray.
 
-This repository is mainly adapt from [ur5_grasp_object_pybullet](https://github.com/leesweqq/ur5_grasp_object_pybullet), change the urdf for gripper and also add the bin to fit the sereact coding challenge.
-And it's like a prototype for fast checking the pipeline. And because pybullet is very easy to use and can quickly build a prototype. So I choose it as the first simulator. And the repository I mention above has already achieved the most jobs, including suction gripper picking and others, so it's very convinience for me to adapt my urdf and epick gripper to solve the challenge.
----
+
+This repository is mainly adapt from [ur5_grasp_object_pybullet](https://github.com/leesweqq/ur5_grasp_object_pybullet), change the urdf for gripper and also add the bin.
+And it's like a prototype for fast checking the pipeline. And because pybullet is very easy to use and can quickly build a prototype. So I choose it as the first simulator.
 
 ## Results Showcase  
 
